@@ -10,6 +10,9 @@
     justify-content: space-between;
     padding:10px 20px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    right: 0;
 }
 .header-title span{
     font-size: 30px;
@@ -271,4 +274,22 @@
 }
 .footer-content span a {
     color: #606060;
+}
+@media (max-width:768px){
+
+    .header{
+        flex-direction: column;
+    }
+    .content-container{
+        width: 100%;
+    }
+    .image-items{
+        flex-direction: column-reverse;
+
+    }
+    .navigation{
+        width: 60%;
+    }
+    
+
 }
